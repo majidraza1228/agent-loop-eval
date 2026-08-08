@@ -127,6 +127,57 @@ Not sure which to run first? See [docs/pattern-picker.md](docs/pattern-picker.md
 
 ---
 
+## 🎯 Agent Loop Evaluator & Metrics
+
+Real-time debugging and performance tracking for autonomous AI agents.
+
+### Quick Links
+
+| Guide | Purpose | Audience |
+|-------|---------|----------|
+| 🚀 **[QUICKSTART.md](QUICKSTART.md)** | 5-minute setup with copy-paste commands | Everyone (start here) |
+| 🎓 **[README-hello-world.md](README-hello-world.md)** | Interactive learning guide with examples | New users |
+| 📊 **[DEVELOPER-GUIDE.md](DEVELOPER-GUIDE.md)** | How to use the evaluator in daily work (7 use cases + metrics) | Developers |
+| 📈 **[TEAM-METRICS-GUIDE.md](TEAM-METRICS-GUIDE.md)** | Phased rollout for teams (baseline → optimize → scale) | Tech leads |
+| 📚 **[NEW-PROJECT-TEMPLATE.md](NEW-PROJECT-TEMPLATE.md)** | Day-by-day workflow for new agent projects | New projects |
+| 💰 **[BENEFITS.md](BENEFITS.md)** | ROI breakdown by role (engineers, DevOps, managers, QA) | Stakeholders |
+| 🔑 **[API-KEYS-GUIDE.md](API-KEYS-GUIDE.md)** | Auth scenarios (GitHub Copilot vs OpenAI) | Setup |
+| 🌐 **[MULTI-SESSION-GUIDE.md](MULTI-SESSION-GUIDE.md)** | Using tools across multiple projects simultaneously | Advanced |
+| 🚢 **[DEPLOYMENT.md](DEPLOYMENT.md)** | Production deployment + CI/CD template | DevOps |
+| ⚙️ **[.github/extensions/README.md](.github/extensions/README.md)** | Canvas extension technical docs | Contributors |
+
+### What You Get
+
+✅ **Real-time loop visualization** — see turns, verdicts, scores as agents run  
+✅ **Performance metrics** — track turns, pass rate, cost estimates  
+✅ **Budget enforcement** — configurable turn limits per task  
+✅ **Team-wide dashboard** — aggregated metrics across all projects/sessions  
+✅ **Automated scoring** — PASS/FAIL/REVIEW verdicts (0-10 points)  
+✅ **Multi-session support** — independent canvases, shared metrics  
+
+### Try It Now
+
+```bash
+# 1. Clone or create new project with extensions
+cp -r .github/extensions ~/my-project/
+
+# 2. Start Copilot in interactive mode
+copilot -i
+
+# 3. Build an agent
+"create a search agent that finds Python files"
+
+# 4. Watch the Agent Loop Evaluator
+open_canvas({ canvasId: "agent-loop-eval" })
+# Real-time visualization of turns, scores, verdicts ✅
+
+# 5. View unified metrics dashboard
+open_canvas({ canvasId: "agent-metrics-dashboard" })
+# Performance trends, cost predictions, team stats ✅
+```
+
+---
+
 ## Repo Layout
 
 ```
