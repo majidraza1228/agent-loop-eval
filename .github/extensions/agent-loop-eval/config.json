@@ -1,0 +1,19 @@
+{
+  "budgetLimit": 15,
+  "description": "Agent Loop Evaluator Configuration",
+  "settings": {
+    "turnBudget": {
+      "value": 15,
+      "description": "Maximum turns allowed before failing budget check",
+      "min": 1,
+      "max": 100
+    },
+    "scoreWeights": {
+      "taskComplete": 3,
+      "noErrors": 3,
+      "efficiency": 4
+    },
+    "autoRefreshInterval": 2000,
+    "description": "Refresh UI every 2 seconds to show live updates"
+  }
+}
